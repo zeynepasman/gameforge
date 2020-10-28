@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import Spinner from '../../components/ui-elements/Spinner';
-import { Tab, TabPanel } from '../../components/ui-elements/Tab';
+import { Tab as TabUtils, Spinner } from '../../components/ui-elements';
 import { useFetch } from '../../lib/hooks';
 import { Url } from '../../lib/url';
 import './index.styles.scss';
+
+const { Tab, TabPanel } = TabUtils;
 
 const tabs: Array<{
   label: string;
@@ -45,7 +46,7 @@ export default function Tabs() {
           ))
         }
       </div>
-      {loading && <Spinner/>}
+      {loading && <Spinner />}
       <div className="tab-content">
         {
           !loading && collection.map((member, index) => (

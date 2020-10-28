@@ -1,4 +1,4 @@
-import './index.styles.scss';
+import './Panel.styles.scss';
 import React from 'react';
 
 export default function TabPanel<T extends {

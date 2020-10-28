@@ -1,4 +1,4 @@
-import './index.styles.scss';
+import './Dropdown.styles.scss';
 import React from 'react';
 
 export default function Dropdown() {

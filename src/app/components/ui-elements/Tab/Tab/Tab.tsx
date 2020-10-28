@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.styles.scss';
+import './Tab.styles.scss';
 
 interface Props {
     onClick: () => void;

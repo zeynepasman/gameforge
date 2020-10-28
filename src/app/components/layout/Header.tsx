@@ -1,5 +1,5 @@
 import React from 'react';
-import Dropdown from '../ui-elements/Dropdown';
+import { Dropdown } from '../ui-elements';
 import Container from './Container';
 
 export default function Header() {

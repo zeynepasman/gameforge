@@ -1,4 +1,4 @@
-import './index.styles.scss';
+import './Accordion.styles.scss';
 import React from 'react';
 
 export default function Accordion({

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Accordion from '../../components/ui-elements/Accordion';
+import { Accordion } from '../../components/ui-elements';
 import { useFetch } from '../../lib/hooks';
 import { Url } from '../../lib/url';
 import './index.styles.scss';

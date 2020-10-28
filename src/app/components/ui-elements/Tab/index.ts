@@ -1,4 +1,4 @@
-import Tab from "./Tab";
-import TabPanel from "./Panel";
+import Tab from "./Tab/Tab";
+import TabPanel from "./Panel/Panel";
 
-export { Tab, TabPanel };
+export default { Tab, TabPanel };
