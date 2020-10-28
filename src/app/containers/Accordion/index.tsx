@@ -18,12 +18,12 @@ export default function AccordionList() {
     const [activeAccordion, setActiveAccordion] = useState(-1);
 
     const toggle = (index: number) => () => {
-        setActiveAccordion(activeAccordion === index ? -1 : index)
+        setActiveAccordion(activeAccordion === index ? -1 : index);
         setValue(list[index].value);
     }
 
     useEffect(() => {
-        if (value) {
+        if (activeAccordion > -1) {
             execute(Url.member({ type: value, id: 1 }).accordion);
         }
     }, [activeAccordion]);
