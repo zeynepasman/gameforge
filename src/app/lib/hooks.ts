@@ -11,7 +11,7 @@ export function useFetch<T>(options: QueryOptions<T>) {
 
   const execute = (url: string) => {
     setLoading(true);
-    ApiService.index<T>(url)
+    ApiService.get<T>(url)
       .then(response => setResponse(response))
       .catch((error: string) => console.error(error))
       .finally(() => setLoading(false))
