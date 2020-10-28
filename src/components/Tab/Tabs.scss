@@ -1,0 +1,33 @@
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid 	#0f3057;
+    background-color: 	#00587a	;
+    button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+      color: white;
+      &:hover {
+        background-color: 	#008891
+      }   
+    }
+    button.active {
+      background-color: #008891;
+    }
+    
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #008891;
+    border-top: none;
+  }
+  
