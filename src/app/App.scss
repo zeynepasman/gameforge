@@ -1,0 +1,82 @@
+/* Universal Styles */
+body {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Work Sans", sans-serif;
+}
+
+@media only screen and (max-width: 560px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+/* Reusable Component - Image Container */
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  background: #000;
+  img {
+    width: 100%;
+  }
+}
+
+.flex-center {
+  @extend .d-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* App Styles */
+
+header {
+  background-color: #0f3057;
+  color: #fff;
+  padding: 10px 0;
+  width: 100%;
+  @extend .flex-center;
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.app-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  @extend .d-flex;
+  flex-wrap: nowrap;
+}
+
+.col {
+  @extend .d-flex;
+}
+
+@media (max-width: 576px) {
+  .row {
+    flex-direction: column;
+  }
+}
